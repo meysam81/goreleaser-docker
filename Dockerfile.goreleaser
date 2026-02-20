@@ -1,0 +1,3 @@
+FROM alpine:3
+COPY $TARGETPLATFORM/goreleaser-docker /usr/local/bin/goreleaser-docker
+ENTRYPOINT ["/usr/local/bin/goreleaser-docker"]
